@@ -1,0 +1,82 @@
+name: Shoreline
+options:
+  deploymentTarget:
+    macOS: '13.0'
+  createIntermediateGroups: true
+settings:
+  base:
+    SWIFT_VERSION: '5.0'
+    MACOSX_DEPLOYMENT_TARGET: '13.0'
+targets:
+  Shoreline:
+    type: application
+    platform: macOS
+    sources:
+      - Sources
+      - path: Resources/AppIcon/AppIcon.icon
+        type: file
+        fileType: folder.iconcomposer.icon
+        buildPhase: resources
+      - path: Resources/Themes
+        type: folder
+        buildPhase: resources
+      - path: LICENSE
+        buildPhase: resources
+      - path: NOTICE
+        buildPhase: resources
+      - path: THIRD_PARTY_NOTICES.md
+        buildPhase: resources
+    configFiles:
+      Debug: config/Signing.xcconfig
+      Release: config/Signing.xcconfig
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: local.shoreline.wallpaper
+        ARCHS: '$(ARCHS_STANDARD)'
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        CONFIGURATION_BUILD_DIR: '$(SRCROOT)/dist'
+        INFOPLIST_FILE: Resources/Info.plist
+        GENERATE_INFOPLIST_FILE: NO
+      configs:
+        Release:
+          ONLY_ACTIVE_ARCH: NO
+  ShorelineTests:
+    type: bundle.unit-test
+    platform: macOS
+    sources:
+      - Tests/Unit
+      - Sources/Settings.swift
+      - Sources/DesktopIcons.swift
+      - Sources/DesktopVisibility.swift
+      - path: Resources/Themes/themes.json
+        buildPhase: resources
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: local.shoreline.wallpaperTests
+        CODE_SIGN_IDENTITY: '-'
+        MACOSX_DEPLOYMENT_TARGET: '14.0'
+  ShorelineUITests:
+    type: bundle.ui-testing
+    platform: macOS
+    sources:
+      - Tests/UI
+    dependencies:
+      - target: Shoreline
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
+        PRODUCT_BUNDLE_IDENTIFIER: local.shoreline.wallpaperUITests
+        TEST_TARGET_NAME: Shoreline
+        CODE_SIGN_IDENTITY: '-'
+        MACOSX_DEPLOYMENT_TARGET: '14.0'
+schemes:
+  Shoreline:
+    build:
+      targets:
+        Shoreline: all
+    test:
+      targets:
+        - ShorelineTests
+        - ShorelineUITests
+      gatherCoverageData: false

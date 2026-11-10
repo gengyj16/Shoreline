@@ -1,0 +1,88 @@
+name: Release
+
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Existing version tag, for example v0.1.2
+        required: true
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: release-${{ inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: macos-26
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    env:
+      RELEASE_TAG: ${{ inputs.tag || github.ref_name }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ inputs.tag || github.ref }}
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Validate version tag
+        shell: bash
+        run: |
+          set -euo pipefail
+          [[ "$RELEASE_TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]
+          VERSION="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleShortVersionString' Resources/Info.plist)"
+          [[ "$RELEASE_TAG" == "v$VERSION" ]]
+          [[ "$(git rev-parse HEAD)" == "$(git rev-parse "refs/tags/$RELEASE_TAG^{commit}")" ]]
+          printf 'VERSION=%s\n' "$VERSION" >> "$GITHUB_ENV"
+          xcodebuild -version
+      - name: Test packaging workflow
+        run: python3 -m unittest discover -s Tests/Packaging -v
+      - name: Run native unit tests
+        run: ./scripts/test-native.sh -only-testing:ShorelineTests
+      - name: Build ad-hoc signed Universal DMG
+        run: ./scripts/release.sh
+      - name: Archive corresponding source
+        shell: bash
+        run: |
+          set -euo pipefail
+          SOURCE_NAME="Shoreline-$VERSION-source.tar.gz"
+          git archive --format=tar.gz --prefix="Shoreline-$VERSION/" -o "dist/$SOURCE_NAME" HEAD
+          (cd dist && shasum -a 256 "$SOURCE_NAME" > "$SOURCE_NAME.sha256")
+      - name: Preserve release artifacts
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: Shoreline-${{ env.VERSION }}
+          path: |
+            dist/*.dmg
+            dist/*.sha256
+            dist/*-source.tar.gz
+          if-no-files-found: error
+          retention-days: 14
+      - name: Publish GitHub Release
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+        run: |
+          set -euo pipefail
+          if gh release view "$RELEASE_TAG" --json isDraft --jq .isDraft > .build/release-draft-state; then
+            [[ "$(cat .build/release-draft-state)" == true ]] || {
+              echo 'This version is already published. Create a new version tag.' >&2
+              exit 1
+            }
+          else
+            gh release create "$RELEASE_TAG" --verify-tag --draft \
+              --title "Shoreline $VERSION" --generate-notes --notes-file docs/INSTALL.md
+          fi
+          gh release upload "$RELEASE_TAG" \
+            "dist/Shoreline-$VERSION-universal.dmg" \
+            "dist/Shoreline-$VERSION-universal.dmg.sha256" \
+            "dist/Shoreline-$VERSION-source.tar.gz" \
+            "dist/Shoreline-$VERSION-source.tar.gz.sha256" --clobber
+          gh release edit "$RELEASE_TAG" --draft=false

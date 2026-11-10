@@ -1,0 +1,24 @@
+{
+  "fill": {
+    "automatic-gradient": "srgb:0.035,0.61,0.65,1.0"
+  },
+  "groups": [
+    {
+      "layers": [
+        {
+          "image-name": "source.png",
+          "name": "Shoreline coast",
+          "position": {
+            "scale": 1.1,
+            "translation-in-points": [0, 0]
+          }
+        }
+      ],
+      "shadow": { "kind": "neutral", "opacity": 0 },
+      "translucency": { "enabled": false, "value": 0 }
+    }
+  ],
+  "supported-platforms": {
+    "squares": "shared"
+  }
+}

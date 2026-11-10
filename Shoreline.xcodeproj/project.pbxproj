@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		202674E71C26372A12E21F95 /* DesktopVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B8828D9943B0EA7B04EFC /* DesktopVisibility.swift */; };
+		258305F8C0D9B8F7D622608A /* DesktopIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3C47886C180311F97C6F4 /* DesktopIcons.swift */; };
+		3523FA5C42F06C23816FEE4A /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3DB49F3D510FD0D9F4E880D /* main.swift */; };
+		39C0A7010444C6A668611F0F /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362923965B9B258AA0584D6 /* Settings.swift */; };
+		4AA4FC181DD9FAE023086943 /* ShorelineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9CF6C1E599950B9609F0D9 /* ShorelineUITests.swift */; };
+		561084321C30494D22FBB17B /* themes.json in Resources */ = {isa = PBXBuildFile; fileRef = 1C02C2F0E4D01AB724660BED /* themes.json */; };
+		71E7CD45CACB09B1184A1157 /* DesktopTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76787D31AD56CE520FFDBEAB /* DesktopTests.swift */; };
+		7599B1260B83CC6C65A74D29 /* Wallpaper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D330AB52FA28DD24992E692 /* Wallpaper.swift */; };
+		7D63D5ACCC189A531DDF4559 /* DesktopVisibilityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49FC7FA9353B14D40501CBEE /* DesktopVisibilityTests.swift */; };
+		7F622C61D1D9EE80DAF3EE01 /* AppController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF3C0D7D9561A98EDC9C8BC /* AppController.swift */; };
+		81DDD200C3013BD4084DAD6E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 68CA0F36CEB395BCDA9DBDF0 /* AppIcon.icon */; };
+		9277C5D0268F8248F1B04B25 /* DesktopVisibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434B8828D9943B0EA7B04EFC /* DesktopVisibility.swift */; };
+		96504DF0E6015F943B128F95 /* DesktopIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BB3C47886C180311F97C6F4 /* DesktopIcons.swift */; };
+		A813A6366AF885D3DAE85C5E /* NOTICE in Resources */ = {isa = PBXBuildFile; fileRef = 1BCA0BC298E6029DC8AC7B32 /* NOTICE */; };
+		AAAC5AB019109C48411D25E0 /* Diagnostics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B081D82DA4B8A9F1F4ACAD /* Diagnostics.swift */; };
+		AF63A161C30EFBB6E9CE03E6 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 7412E6FA3C30DF4AEABBABA9 /* LICENSE */; };
+		AF9D4D722559AABD23B0D2C4 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0362923965B9B258AA0584D6 /* Settings.swift */; };
+		E205DAE55B10B5C20D51DD98 /* THIRD_PARTY_NOTICES.md in Resources */ = {isa = PBXBuildFile; fileRef = 8FE4FE5231E0D236F98F1CA9 /* THIRD_PARTY_NOTICES.md */; };
+		E8F753232EC9D67DFA736FF5 /* Themes in Resources */ = {isa = PBXBuildFile; fileRef = C0810B5C7F6771FE96B62614 /* Themes */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A65CA21B66B652DD8F44A029 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D1D49892774A6E51184328EF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 449839003B6691E2734E5A9A;
+			remoteInfo = Shoreline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0362923965B9B258AA0584D6 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1BCA0BC298E6029DC8AC7B32 /* NOTICE */ = {isa = PBXFileReference; path = NOTICE; sourceTree = "<group>"; };
+		1C02C2F0E4D01AB724660BED /* themes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = themes.json; sourceTree = "<group>"; };
+		1D330AB52FA28DD24992E692 /* Wallpaper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallpaper.swift; sourceTree = "<group>"; };
+		434B8828D9943B0EA7B04EFC /* DesktopVisibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopVisibility.swift; sourceTree = "<group>"; };
+		49FC7FA9353B14D40501CBEE /* DesktopVisibilityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopVisibilityTests.swift; sourceTree = "<group>"; };
+		5C362E25B6EC6A01D9D32F3D /* ShorelineUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShorelineUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		68CA0F36CEB395BCDA9DBDF0 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = wrapper.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		6DAD1F7ECA079E11F7F859A9 /* Shoreline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shoreline.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6EF3C0D7D9561A98EDC9C8BC /* AppController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppController.swift; sourceTree = "<group>"; };
+		72C1F1E9E23909A7E210B065 /* ShorelineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShorelineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7412E6FA3C30DF4AEABBABA9 /* LICENSE */ = {isa = PBXFileReference; path = LICENSE; sourceTree = "<group>"; };
+		76787D31AD56CE520FFDBEAB /* DesktopTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopTests.swift; sourceTree = "<group>"; };
+		7BB3C47886C180311F97C6F4 /* DesktopIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesktopIcons.swift; sourceTree = "<group>"; };
+		8FE4FE5231E0D236F98F1CA9 /* THIRD_PARTY_NOTICES.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = THIRD_PARTY_NOTICES.md; sourceTree = "<group>"; };
+		99B081D82DA4B8A9F1F4ACAD /* Diagnostics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Diagnostics.swift; sourceTree = "<group>"; };
+		C0810B5C7F6771FE96B62614 /* Themes */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Themes; path = Resources/Themes; sourceTree = SOURCE_ROOT; };
+		C3DB49F3D510FD0D9F4E880D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		CE9CF6C1E599950B9609F0D9 /* ShorelineUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShorelineUITests.swift; sourceTree = "<group>"; };
+		F37EC9E291ABE796D3A16399 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		21D195F84DADB66C4B922572 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C0810B5C7F6771FE96B62614 /* Themes */,
+				4E6B357DB77737AE7FBFF001 /* AppIcon */,
+				EFEFFF2F4B86AB59002118DD /* Themes */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3093CFAA3B2346D856586CFB /* config */ = {
+			isa = PBXGroup;
+			children = (
+				F37EC9E291ABE796D3A16399 /* Signing.xcconfig */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		4E6B357DB77737AE7FBFF001 /* AppIcon */ = {
+			isa = PBXGroup;
+			children = (
+				68CA0F36CEB395BCDA9DBDF0 /* AppIcon.icon */,
+			);
+			path = AppIcon;
+			sourceTree = "<group>";
+		};
+		56352DE6055EA55E70CD7470 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6DAD1F7ECA079E11F7F859A9 /* Shoreline.app */,
+				72C1F1E9E23909A7E210B065 /* ShorelineTests.xctest */,
+				5C362E25B6EC6A01D9D32F3D /* ShorelineUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		72B43470C8F4190F1A49D744 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				CE9CF6C1E599950B9609F0D9 /* ShorelineUITests.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A22035831DEE85B2365F9DBA /* Unit */ = {
+			isa = PBXGroup;
+			children = (
+				76787D31AD56CE520FFDBEAB /* DesktopTests.swift */,
+				49FC7FA9353B14D40501CBEE /* DesktopVisibilityTests.swift */,
+			);
+			path = Unit;
+			sourceTree = "<group>";
+		};
+		C691C64C052DF7D6DE4A1D43 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				72B43470C8F4190F1A49D744 /* UI */,
+				A22035831DEE85B2365F9DBA /* Unit */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		E057A9904FC8B8E44A85020C /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				6EF3C0D7D9561A98EDC9C8BC /* AppController.swift */,
+				7BB3C47886C180311F97C6F4 /* DesktopIcons.swift */,
+				434B8828D9943B0EA7B04EFC /* DesktopVisibility.swift */,
+				99B081D82DA4B8A9F1F4ACAD /* Diagnostics.swift */,
+				C3DB49F3D510FD0D9F4E880D /* main.swift */,
+				0362923965B9B258AA0584D6 /* Settings.swift */,
+				1D330AB52FA28DD24992E692 /* Wallpaper.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		EFEFFF2F4B86AB59002118DD /* Themes */ = {
+			isa = PBXGroup;
+			children = (
+				1C02C2F0E4D01AB724660BED /* themes.json */,
+			);
+			path = Themes;
+			sourceTree = "<group>";
+		};
+		F82AD286DB6D860193958135 = {
+			isa = PBXGroup;
+			children = (
+				7412E6FA3C30DF4AEABBABA9 /* LICENSE */,
+				1BCA0BC298E6029DC8AC7B32 /* NOTICE */,
+				8FE4FE5231E0D236F98F1CA9 /* THIRD_PARTY_NOTICES.md */,
+				3093CFAA3B2346D856586CFB /* config */,
+				21D195F84DADB66C4B922572 /* Resources */,
+				E057A9904FC8B8E44A85020C /* Sources */,
+				C691C64C052DF7D6DE4A1D43 /* Tests */,
+				56352DE6055EA55E70CD7470 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		449839003B6691E2734E5A9A /* Shoreline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 43B022D9BF11D280BAC99B5B /* Build configuration list for PBXNativeTarget "Shoreline" */;
+			buildPhases = (
+				64A5786CE1353FB065316E11 /* Sources */,
+				A1C0F5F09B64C22B107DB381 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shoreline;
+			packageProductDependencies = (
+			);
+			productName = Shoreline;
+			productReference = 6DAD1F7ECA079E11F7F859A9 /* Shoreline.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8D109BFB61B6A4BA027FA2F7 /* ShorelineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99003660C6F2B9F64B232D8C /* Build configuration list for PBXNativeTarget "ShorelineTests" */;
+			buildPhases = (
+				149C962167BCD2D6266E40F8 /* Sources */,
+				D4059097232F40943673BDF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShorelineTests;
+			packageProductDependencies = (
+			);
+			productName = ShorelineTests;
+			productReference = 72C1F1E9E23909A7E210B065 /* ShorelineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B27D96B73A046D388F958ED2 /* ShorelineUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3ADD4F9720EC3BEECAB74EA /* Build configuration list for PBXNativeTarget "ShorelineUITests" */;
+			buildPhases = (
+				0F1A682B3419164A898EDA1F /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A294F765DEFE7B97767512F8 /* PBXTargetDependency */,
+			);
+			name = ShorelineUITests;
+			packageProductDependencies = (
+			);
+			productName = ShorelineUITests;
+			productReference = 5C362E25B6EC6A01D9D32F3D /* ShorelineUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1D49892774A6E51184328EF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					449839003B6691E2734E5A9A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					B27D96B73A046D388F958ED2 = {
+						TestTargetID = 449839003B6691E2734E5A9A;
+					};
+				};
+			};
+			buildConfigurationList = 4C8522266A3FC816E466B77D /* Build configuration list for PBXProject "Shoreline" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F82AD286DB6D860193958135;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 56352DE6055EA55E70CD7470 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				449839003B6691E2734E5A9A /* Shoreline */,
+				8D109BFB61B6A4BA027FA2F7 /* ShorelineTests */,
+				B27D96B73A046D388F958ED2 /* ShorelineUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1C0F5F09B64C22B107DB381 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				81DDD200C3013BD4084DAD6E /* AppIcon.icon in Resources */,
+				AF63A161C30EFBB6E9CE03E6 /* LICENSE in Resources */,
+				A813A6366AF885D3DAE85C5E /* NOTICE in Resources */,
+				E205DAE55B10B5C20D51DD98 /* THIRD_PARTY_NOTICES.md in Resources */,
+				E8F753232EC9D67DFA736FF5 /* Themes in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D4059097232F40943673BDF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				561084321C30494D22FBB17B /* themes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0F1A682B3419164A898EDA1F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AA4FC181DD9FAE023086943 /* ShorelineUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		149C962167BCD2D6266E40F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96504DF0E6015F943B128F95 /* DesktopIcons.swift in Sources */,
+				71E7CD45CACB09B1184A1157 /* DesktopTests.swift in Sources */,
+				202674E71C26372A12E21F95 /* DesktopVisibility.swift in Sources */,
+				7D63D5ACCC189A531DDF4559 /* DesktopVisibilityTests.swift in Sources */,
+				AF9D4D722559AABD23B0D2C4 /* Settings.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64A5786CE1353FB065316E11 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F622C61D1D9EE80DAF3EE01 /* AppController.swift in Sources */,
+				258305F8C0D9B8F7D622608A /* DesktopIcons.swift in Sources */,
+				9277C5D0268F8248F1B04B25 /* DesktopVisibility.swift in Sources */,
+				AAAC5AB019109C48411D25E0 /* Diagnostics.swift in Sources */,
+				39C0A7010444C6A668611F0F /* Settings.swift in Sources */,
+				7599B1260B83CC6C65A74D29 /* Wallpaper.swift in Sources */,
+				3523FA5C42F06C23816FEE4A /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A294F765DEFE7B97767512F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 449839003B6691E2734E5A9A /* Shoreline */;
+			targetProxy = A65CA21B66B652DD8F44A029 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1733CB53832AE0FAB5FA6826 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		2AA5BD4EE4C17EA2E4074CDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaperUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Shoreline;
+			};
+			name = Release;
+		};
+		390E91101C9B81910CC9AA22 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37EC9E291ABE796D3A16399 /* Signing.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/dist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaper;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		4588011D7EBFF45E93D41FE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaperTests;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		98940BACB0C722315C9B1BEC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		BEEFD719C4F31868AA5610B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaperTests;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4EA57443FEC8128E1372942 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F37EC9E291ABE796D3A16399 /* Signing.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = "$(SRCROOT)/dist";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaper;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		FB4A350E10DC81C67F78F9CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = local.shoreline.wallpaperUITests;
+				SDKROOT = macosx;
+				TEST_TARGET_NAME = Shoreline;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		43B022D9BF11D280BAC99B5B /* Build configuration list for PBXNativeTarget "Shoreline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EA57443FEC8128E1372942 /* Debug */,
+				390E91101C9B81910CC9AA22 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		4C8522266A3FC816E466B77D /* Build configuration list for PBXProject "Shoreline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				98940BACB0C722315C9B1BEC /* Debug */,
+				1733CB53832AE0FAB5FA6826 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		99003660C6F2B9F64B232D8C /* Build configuration list for PBXNativeTarget "ShorelineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEEFD719C4F31868AA5610B9 /* Debug */,
+				4588011D7EBFF45E93D41FE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B3ADD4F9720EC3BEECAB74EA /* Build configuration list for PBXNativeTarget "ShorelineUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB4A350E10DC81C67F78F9CC /* Debug */,
+				2AA5BD4EE4C17EA2E4074CDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1D49892774A6E51184328EF /* Project object */;
+}
